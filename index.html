@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>🌟 Task Manager</h1>
+      <p class="subtitle">Stay organized. Stay inspired.</p>
+      <p class="date" id="currentDate"></p> <!-- 📅 Date display -->
+    </header>
+
+    <section class="task-input">
+      <input type="text" id="taskInput" placeholder="What do you need to do?" />
+      <button id="addTaskBtn">➕ Add</button>
+    </section>
+
+    <section class="task-stats">
+      <div class="stat-box remaining" id="remainingBox">🕒 Remaining: 0</div>
+      <div class="stat-box completed" id="completedBox">✅ Completed: 0</div>
+      <div class="stat-box total" id="totalBox">📋 Total Tasks: 0</div> <!-- 📋 Total tasks -->
+    </section>
+
+    <section class="task-list" id="taskList">
+      <!-- Tasks will appear here -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
